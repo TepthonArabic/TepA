@@ -1,12 +1,12 @@
 databases:
-  - name: Tepthon
+  - name: TheTepthon
     ipAllowList: []
     region: frankfurt
     plan: free
 services:
   - type: web
     plan: free
-    name: Tepthon
+    name: TheTepthon
     env: python
     repo: https://github.com/TepthonArabic/TepA
     buildCommand: pip install -U -r requirements.txt
@@ -31,6 +31,6 @@ services:
         value: 3.10.9
       - key: DATABASE_URL
         fromDatabase:
-          name: aTepA
+          name: TheTepthon
           property: connectionString  
   
